@@ -296,51 +296,36 @@ function LaunchHub()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt"))()
     end)
 
-    CrearBotonNormal("Energize Emotes (Bailes)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/M1Z03/Energize/main/Energize.lua"))()
+        -- SCRIPTS ACTUALIZADOS POR LIMÓN (FUNCIONANDO)
+    
+    CrearBotonNormal("Redz Hub (Blox Fruits)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/main/Source.lua"))()
+    end)
+
+    CrearBotonNormal("Speed Hub (Multi-Juego)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub/main/Main.lua"))()
+    end)
+
+    CrearBotonNormal("Lunar Hub (Brookhaven)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-LUA/Lunar-Hub/main/Main.lua"))()
+    end)
+
+    CrearBotonNormal("Gama Hub (MM2)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GamaHub/GamaHub/main/Main.lua"))()
+    end)
+
+    CrearBotonNormal("Auto-Farm (Pet Sim 99)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero-Hub/XeroHub/main/Main.lua"))()
+    end)
+
+    CrearBotonNormal("Vynixius (Admin)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vynixu/Vynixius/main/Main.lua"))()
+    end)
+
+    CrearBotonNormal("Tora Is Me (Universal)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Universal"))()
     end)
     
-    CrearBotonNormal("Blox Fruits (RedzHub)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDZ393/Hub/main/computerv2.lua"))()
-    end)
-        -- NUEVOS SCRIPTS DE BLOX FRUITS (Agregados por Limón)
-    
-    CrearBotonNormal("Hoho Hub (Blox Fruits)", ScriptsFrame, function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_HUB/main/Loading_v2.lua'))()
-    end)
-
-    CrearBotonNormal("Alchemy Hub (Blox Fruits)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/DeulS-v1/AlchemyHub/main/Main.lua"))()
-    end)
-
-    CrearBotonNormal("Zaque Hub (Blox Fruits)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/ZaqueHub/main/main.lua"))()
-    end)
-        -- SECCIÓN DE LOS 7 MEJORES SCRIPTS (By Limón)
-    
-    CrearBotonNormal("Hoho Hub (Blox Fruits)", ScriptsFrame, function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_HUB/main/Loading_v2.lua'))()
-    end)
-
-    CrearBotonNormal("Zaque Hub (Blox Fruits)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/ZaqueHub/main/main.lua"))()
-    end)
-
-    CrearBotonNormal("Brookhaven Admin", ScriptsFrame, function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/IceMage666/Brookhaven/main/main.lua'))()
-    end)
-
-    CrearBotonNormal("MM2 Script (Vynixu)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vynixu/Vynixius/main/MM2/Required%20Files/Main.lua"))()
-    end)
-
-    CrearBotonNormal("Vape V4 (BedWars)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
-    end)
-
-    CrearBotonNormal("Pet Sim 99 (ZapHub)", ScriptsFrame, function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/zaphub/zaphub/main/loader.lua'))()
-    end)
 
     CrearBotonNormal("Doors Hub (MSPAINT)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()

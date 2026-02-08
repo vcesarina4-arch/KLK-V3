@@ -181,7 +181,7 @@ function LaunchHub()
     PhysicsFrame.Size = UDim2.new(1, -20, 1, -80)
     PhysicsFrame.Position = UDim2.new(0, 10, 0, 75)
     PhysicsFrame.BackgroundTransparency = 1
-    PhysicsFrame.CanvasSize = UDim2.new(0,0,2,0)
+    PhysicsFrame.CanvasSize = UDim2.new(0,0,5,0)
     PhysicsFrame.Visible = false
 
     local function AddList(p) 
@@ -303,7 +303,49 @@ function LaunchHub()
     CrearBotonNormal("Blox Fruits (RedzHub)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/REDZ393/Hub/main/computerv2.lua"))()
     end)
+        -- NUEVOS SCRIPTS DE BLOX FRUITS (Agregados por Limón)
+    
+    CrearBotonNormal("Hoho Hub (Blox Fruits)", ScriptsFrame, function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_HUB/main/Loading_v2.lua'))()
+    end)
 
+    CrearBotonNormal("Alchemy Hub (Blox Fruits)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DeulS-v1/AlchemyHub/main/Main.lua"))()
+    end)
+
+    CrearBotonNormal("Zaque Hub (Blox Fruits)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/ZaqueHub/main/main.lua"))()
+    end)
+        -- SECCIÓN DE LOS 7 MEJORES SCRIPTS (By Limón)
+    
+    CrearBotonNormal("Hoho Hub (Blox Fruits)", ScriptsFrame, function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_HUB/main/Loading_v2.lua'))()
+    end)
+
+    CrearBotonNormal("Zaque Hub (Blox Fruits)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/ZaqueHub/main/main.lua"))()
+    end)
+
+    CrearBotonNormal("Brookhaven Admin", ScriptsFrame, function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/IceMage666/Brookhaven/main/main.lua'))()
+    end)
+
+    CrearBotonNormal("MM2 Script (Vynixu)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vynixu/Vynixius/main/MM2/Required%20Files/Main.lua"))()
+    end)
+
+    CrearBotonNormal("Vape V4 (BedWars)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end)
+
+    CrearBotonNormal("Pet Sim 99 (ZapHub)", ScriptsFrame, function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/zaphub/zaphub/main/loader.lua'))()
+    end)
+
+    CrearBotonNormal("Doors Hub (MSPAINT)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+    end)
+    
     -- Abrir con animación al iniciar tras la Key
     MainFrame.Visible = true
     MainFrame:TweenSize(UDim2.new(0, 350, 0, 250), "Out", "Back", 0.6, true)

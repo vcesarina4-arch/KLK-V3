@@ -181,7 +181,7 @@ function LaunchHub()
     PhysicsFrame.Size = UDim2.new(1, -20, 1, -80)
     PhysicsFrame.Position = UDim2.new(0, 10, 0, 75)
     PhysicsFrame.BackgroundTransparency = 1
-    PhysicsFrame.CanvasSize = UDim2.new(0,0,5,0)
+    PhysicsFrame.CanvasSize = UDim2.new(0,0,6,0)
     PhysicsFrame.Visible = false
 
     local function AddList(p) 

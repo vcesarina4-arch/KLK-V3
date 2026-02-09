@@ -298,35 +298,36 @@ function LaunchHub()
 
         -- SCRIPTS ACTUALIZADOS POR LIMÓN (FUNCIONANDO)
     
-    CrearBotonNormal("Redz Hub (Blox Fruits)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/main/Source.lua"))()
+        -- SCRIPTS QUE SE AUTO-ACTUALIZAN (Probados para Delta)
+    
+    CrearBotonNormal("W-Azure (Blox Fruits)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf5333c0ffad8cf01616e1d872.lua"))()
     end)
 
-    CrearBotonNormal("Speed Hub (Multi-Juego)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub/main/Main.lua"))()
+    CrearBotonNormal("Ripper Hub (Varios Juegos)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RipperHub/RipperHub/main/Main.lua"))()
     end)
 
-    CrearBotonNormal("Lunar Hub (Brookhaven)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-LUA/Lunar-Hub/main/Main.lua"))()
+    CrearBotonNormal("Banana Hub (Hub Principal)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/bananamods/BananaHub/main/Main.lua"))()
     end)
 
-    CrearBotonNormal("Gama Hub (MM2)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/GamaHub/GamaHub/main/Main.lua"))()
+    CrearBotonNormal("Native Hub (MM2/Multi)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Native-Scripts/Native/main/Main.lua"))()
     end)
 
-    CrearBotonNormal("Auto-Farm (Pet Sim 99)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero-Hub/XeroHub/main/Main.lua"))()
+    CrearBotonNormal("Xenon Hub (Universal Admin)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenon-Hub/Xenon/main/Main.lua"))()
     end)
 
-    CrearBotonNormal("Vynixius (Admin)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vynixu/Vynixius/main/Main.lua"))()
+    CrearBotonNormal("Ghost Hub (Brookhaven)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer-Scripts/GhostHub/main/Main.lua"))()
     end)
 
-    CrearBotonNormal("Tora Is Me (Universal)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Universal"))()
+    CrearBotonNormal("Solaris Hub (Blox Fruits V2)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Solaris-Scripts/Solaris/main/Main.lua"))()
     end)
     
-
     CrearBotonNormal("Doors Hub (MSPAINT)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
     end)

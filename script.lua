@@ -312,6 +312,23 @@ function LaunchHub()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/nxvap/Hexagon/refs/heads/main/brookhaven"))()
     end)
 
+    -- Botón para el Script de Tsunami (Brainrot Edition)
+local TsunamiButton = Tab1:CreateButton({
+    Name = "🌊 TSUNAMI ESCAPE (Brainrot) 🧠",
+    Callback = function()
+        -- Aquí se ejecuta el script que pasaste
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Escape-Tsunami-For-Brainrots!-KEYLESS-AUTO-GAP-HITBOX-50-FEATURES-106378"))()
+        
+        -- Notificación para que el usuario sepa que cargó
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "LimonHb Beta",
+            Text = "Tsunami Script Loaded! 🚀",
+            Duration = 5
+        })
+    end,
+})
+    
+
     CrearBotonNormal("RatX Hub (Loader)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Ratkinator/RatX/refs/heads/main/Loader.lua", true))()
     end)

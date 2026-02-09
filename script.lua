@@ -287,6 +287,12 @@ function LaunchHub()
     CrearBotonNormal("Fly GUI V3 (Volar)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
     end)
+        -- EL MEJOR SCRIPT DE BLOX FRUITS (GravityHub)
+    
+    CrearBotonNormal("Gravity Hub (Blox Fruits)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
+    end)
+    
 
     CrearBotonNormal("Dark Dex (Ver Archivos)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()

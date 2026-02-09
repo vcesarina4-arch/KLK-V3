@@ -300,32 +300,18 @@ function LaunchHub()
     
         -- SCRIPTS QUE SE AUTO-ACTUALIZAN (Probados para Delta)
     
-    CrearBotonNormal("W-Azure (Blox Fruits)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf5333c0ffad8cf01616e1d872.lua"))()
+        -- SCRIPTS VERIFICADOS POR LIMÓN (FUNCIONAN 100%)
+    
+    CrearBotonNormal("Hexagon Hub (Brookhaven)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nxvap/Hexagon/refs/heads/main/brookhaven"))()
     end)
 
-    CrearBotonNormal("Ripper Hub (Varios Juegos)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RipperHub/RipperHub/main/Main.lua"))()
+    CrearBotonNormal("RatX Hub (Loader)", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ratkinator/RatX/refs/heads/main/Loader.lua", true))()
     end)
 
-    CrearBotonNormal("Banana Hub (Hub Principal)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/bananamods/BananaHub/main/Main.lua"))()
-    end)
-
-    CrearBotonNormal("Native Hub (MM2/Multi)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Native-Scripts/Native/main/Main.lua"))()
-    end)
-
-    CrearBotonNormal("Xenon Hub (Universal Admin)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenon-Hub/Xenon/main/Main.lua"))()
-    end)
-
-    CrearBotonNormal("Ghost Hub (Brookhaven)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer-Scripts/GhostHub/main/Main.lua"))()
-    end)
-
-    CrearBotonNormal("Solaris Hub (Blox Fruits V2)", ScriptsFrame, function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Solaris-Scripts/Solaris/main/Main.lua"))()
+    CrearBotonNormal("Jmods Universal", ScriptsFrame, function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Jmods-Universal-38764"))()
     end)
     
     CrearBotonNormal("Doors Hub (MSPAINT)", ScriptsFrame, function()

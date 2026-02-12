@@ -1,6 +1,6 @@
 --[[ 
     🇩🇴 KLK HUB V3 - MOBILE EDITION 🇩🇴
-    Creado por: [Limon] - Versión Protegida
+    Creado por: [Limon] - Versión Protegida y Corregida
 ]]
 
 -- Clave y Link escondidos (No los modifiques)
@@ -14,7 +14,7 @@ local Character = Player.Character or Player.CharacterAdded:Wait()
 local Humanoid = Character:WaitForChild("Humanoid")
 
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "KlK_Hub_Final"
+ScreenGui.Name = "KlK_Hub_Final_V3"
 ScreenGui.Parent = Player:WaitForChild("PlayerGui")
 ScreenGui.ResetOnSpawn = false
 
@@ -122,7 +122,13 @@ function LaunchHub()
     local MainFrame = Instance.new("Frame", ScreenGui)
     MainFrame.Size = UDim2.new(0, 0, 0, 0)
     MainFrame.Position = UDim2.new(0.5, -175, 0.5, -125)
-    MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    MainFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+    
+    local MainStroke = Instance.new("UIStroke", MainFrame)
+    MainStroke.Color = Color3.fromRGB(180, 255, 0)
+    MainStroke.Thickness = 2
+    MainStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border -- ARREGLADO (Estaba separado)
+    
     MainFrame.ClipsDescendants = true
     MainFrame.Visible = false
     MainFrame.Draggable = true 
@@ -144,15 +150,18 @@ function LaunchHub()
     end)
 
     local TopBar = Instance.new("Frame", MainFrame)
-    TopBar.Size = UDim2.new(1, 0, 0, 40)
-    TopBar.BackgroundTransparency = 1
+    TopBar.Size = UDim2.new(1, 0, 0, 45)
+    TopBar.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+    Instance.new("UICorner", TopBar).CornerRadius = UDim.new(0, 10) -- ARREGLADO (Estaba separado)
+
+    TopBar.BackgroundTransparency = 0 -- ARREGLADO (Estaba en 1, no se veía el color)
     local Title = Instance.new("TextLabel", TopBar)
-    Title.Text = "KlK HUB PREMIUM"
+    Title.Text = "🍋 KlK HUB"
     Title.Size = UDim2.new(1, 0, 1, 0)
     Title.BackgroundTransparency = 1
-    Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Title.TextColor3 = Color3.fromRGB(180, 255, 0)
     Title.Font = Enum.Font.GothamBold
-    Title.TextSize = 18
+    Title.TextSize = 20
     
     local CloseX = Instance.new("TextButton", TopBar)
     CloseX.Text = "X"
@@ -217,7 +226,12 @@ function LaunchHub()
         local btn = Instance.new("TextButton", parent)
         btn.Text = nombre
         btn.Size = UDim2.new(0.95, 0, 0, 40)
-        btn.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+        btn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+        local btnStroke = Instance.new("UIStroke", btn)
+        btnStroke.Color = Color3.fromRGB(180, 255, 0)
+        btnStroke.Thickness = 1
+        btnStroke.Transparency = 0.5
+
         btn.TextColor3 = Color3.new(1, 1, 1)
         btn.Font = Enum.Font.GothamBold
         Instance.new("UICorner", btn).CornerRadius = UDim.new(0, 6)
@@ -287,13 +301,12 @@ function LaunchHub()
     CrearBotonNormal("Fly GUI V3 (Volar)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
     end)
-        -- EL MEJOR SCRIPT DE BLOX FRUITS (GravityHub)
     
+    -- EL MEJOR SCRIPT DE BLOX FRUITS (GravityHub)
     CrearBotonNormal("Gravity Hub (Blox Fruits)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
     end)
     
-
     CrearBotonNormal("Dark Dex (Ver Archivos)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
     end)
@@ -302,12 +315,6 @@ function LaunchHub()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt"))()
     end)
 
-        -- SCRIPTS ACTUALIZADOS POR LIMÓN (FUNCIONANDO)
-    
-        -- SCRIPTS QUE SE AUTO-ACTUALIZAN (Probados para Delta)
-    
-        -- SCRIPTS VERIFICADOS POR LIMÓN (FUNCIONAN 100%)
-    
     CrearBotonNormal("Hexagon Hub (Brookhaven)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/nxvap/Hexagon/refs/heads/main/brookhaven"))()
     end)
@@ -316,7 +323,6 @@ function LaunchHub()
     CrearBotonNormal("escape from tsunami by (brainrot)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/Escape-Tsunami-For-Brainrots!-KEYLESS-AUTO-GAP-HITBOX-50-FEATURES-106378"))()
      end)
-        
 
     CrearBotonNormal("RatX Hub (Loader)", ScriptsFrame, function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Ratkinator/RatX/refs/heads/main/Loader.lua", true))()
@@ -334,4 +340,16 @@ function LaunchHub()
     MainFrame.Visible = true
     MainFrame:TweenSize(UDim2.new(0, 350, 0, 250), "Out", "Back", 0.6, true)
     Abierto = true
+
+    -- Efecto de parpadeo suave al borde (Neon Effect)
+    -- ARREGLADO: Ahora está en el lugar correcto y no bugea el juego
+    spawn(function()
+        while wait(1) do
+            if MainStroke then -- Solo ejecuta si el borde existe
+                TweenService:Create(MainStroke, TweenInfo.new(1), {Color = Color3.fromRGB(255, 255, 255)}):Play()
+                wait(1)
+                TweenService:Create(MainStroke, TweenInfo.new(1), {Color = Color3.fromRGB(180, 255, 0)}):Play()
+            end
+        end
+    end)
 end
